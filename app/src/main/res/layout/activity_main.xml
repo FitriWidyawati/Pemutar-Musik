@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="belajar.background.transition.MainActivity" >
+
+    <ImageView
+        android:id="@+id/imgBackground"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:scaleType="centerCrop"
+        android:src="@drawable/gambar"
+        tools:backgroundTint="@android:color/holo_orange_light" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="69dp"
+        android:background="@android:color/holo_blue_bright"
+        android:backgroundTint="@android:color/holo_orange_light"
+        android:text="Lagu Nasional"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/btnPLAY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="103dp"
+        android:layout_toLeftOf="@+id/textView"
+        android:layout_toStartOf="@+id/textView"
+        android:background="@android:color/holo_red_dark"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:text="PLAY" />
+
+
+    <Button
+        android:id="@+id/btnSTOP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnPAUSE"
+        android:layout_alignBottom="@+id/btnPAUSE"
+        android:layout_toEndOf="@+id/textView"
+        android:layout_toRightOf="@+id/textView"
+        android:backgroundTint="@android:color/holo_blue_bright"
+        android:text="STOP" />
+
+    <Button
+        android:id="@+id/btnPAUSE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnPLAY"
+        android:layout_alignBottom="@+id/btnPLAY"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorAccent"
+        android:backgroundTint="@android:color/holo_blue_bright"
+        android:text="PAUSE" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:text="15670032"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="89dp"
+        android:text="Fitri Widayawti"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+</RelativeLayout>
